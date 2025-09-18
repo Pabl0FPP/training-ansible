@@ -30,6 +30,9 @@ ansible-playbook -i inventory/hosts.ini playbooks/install_docker.yml
 ```
 Este comando ejecuta el playbook que instala Docker en los servidores especificados en el inventario.
 
+<img width="1243" height="365" alt="image" src="https://github.com/user-attachments/assets/46379ab3-b0f8-4cec-a721-fcebd07c7675" />
+
+
 ### 3. Ejecutar contenedores Docker
 Ejecuta el siguiente comando para iniciar y gestionar contenedores Docker:
 
@@ -38,19 +41,29 @@ ansible-playbook -i inventory/hosts.ini playbooks/run_container.yml
 ```
 Este comando ejecuta el playbook que inicia y gestiona contenedores Docker en los servidores definidos en el inventario.
 
+<img width="1239" height="219" alt="image" src="https://github.com/user-attachments/assets/b547e58c-914c-41d0-8862-c72b4af42e89" />
+
+
 ### 4. Abrir puertos en la VM
-Si la máquina virtual no tiene abiertos los puertos necesarios para acceder al contenedor, ábrelos desde el portal de Azure o usando la CLI correspondiente.
+Si la máquina virtual no tiene abiertos los puertos necesarios para acceder al contenedor, ábrelos desde el portal de Azure o desde el Terraform.
+
+<img width="444" height="462" alt="image" src="https://github.com/user-attachments/assets/6ff2bc75-a375-4a51-96ef-9622aca75d32" />
+
 
 ### 5. Comprobar funcionamiento
 Verifica que Docker esté instalado y que el contenedor esté corriendo correctamente.
 
 #### 5.1
+
 ```bash
 docker ps
 ```
+<img width="632" height="101" alt="image" src="https://github.com/user-attachments/assets/a811f0b6-c672-4492-9092-61143cf3ae40" />
 
 #### 5.2 Acceder al servicio expuesto por el contenedor
 
+
+<img width="800" height="611" alt="image" src="https://github.com/user-attachments/assets/3b2b0067-4b9a-4d95-a1df-b54379d49939" />
 
 
 
